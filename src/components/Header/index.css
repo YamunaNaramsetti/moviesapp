@@ -1,232 +1,146 @@
-.navbar-bg-color {
-  background-color: rgba(0, 0, 0, 0.5);
+.navbar {
+  height: 10vh;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 0px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  height: 60px;
-  width: 100%;
-  /* position: fixed; */
+  background-color: #000;
+  opacity: 0.8;
 }
-.lg-logo-container {
+.navbar-logo-link-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
 
-.header-logo {
-  width: 135px;
-  height: 39px;
-}
-.search-btn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin-right: 10px;
-}
-.menu-btn {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.profile-image {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  /* display: none; */
-  visibility: hidden;
-  text-align: center;
-}
-.actions-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.header-link-container {
+  display: none;
 }
 @media screen and (min-width: 768px) {
-  .app-logo {
-    width: 135px;
-    height: 39px;
-  }
-
-  .profile-image {
-    margin-right: 10px;
-    visibility: visible;
-    margin-bottom: 10px;
-  }
-  .navbar-bg-color {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  .menu-btn {
-    visibility: hidden;
-  }
-  .search-btn {
-    margin-right: 22px;
-  }
-}
-
-.header-logo-links-container {
-  align-self: initial;
-  list-style-type: none;
-  display: flex;
-  margin-left: -20%;
-  text-decoration: none;
-}
-.header-logo-each-link {
-  margin-right: 20px;
-}
-@media screen and (max-width: 768px) {
-  .header-logo-links-container {
-    display: none;
-  }
-}
-.nav-container {
-  background-color: #13131330;
-  min-height: 75px;
-  padding: 15px;
-}
-.nav-elements-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-list-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .app-logo {
-    width: 100px;
-    height: 27px;
-  }
-
-  .nav-list-items {
-    display: none;
-  }
-}
-
-.list-mini {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: ;
-}
-
-.profile-logo {
-  display: none;
-}
-@media screen and (min-width: 767px) {
-  .profile-logo {
+  .header-link-container {
     display: block;
-    height: 35px;
-    margin-left: 15px;
-    margin-right: 15px;
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
-.menu-icon {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .menu-icon {
-    display: block;
-    color: #ffffff;
-    height: 28px;
-
-    margin-left: 10px;
-  }
-}
-
-.icon {
-  color: #ffffff;
-  height: 25px;
-
-  margin-left: 10px;
-}
-
-.active {
-  color: #ffffff;
-  font-weight: 800;
-  border-bottom: 1px solid white;
-}
-
-.passive {
-  color: #ffffff90;
-}
-
-.nav-link {
-  list-style-type: none;
+.route-link {
   text-decoration: none;
-  outline: none;
+  color: #ffffff;
 }
-.search {
-  size: 20px;
-  background-color: #131313;
-  border-width: 2px 1px 0.5px 1px;
-  border-color: grey;
-  margin-right: 8px;
-  width: 125px;
-  color: white;
-  padding: 5px;
-  border-radius: 8px;
+.header-link {
+  margin-left: 54px;
+}
+.search-and-avatar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .search-container {
+  height: 22px;
+  margin-right: 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  background-color: transparent;
 }
 
-.search-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #909090;
-  width: 70px;
+@media screen and (min-width: 768px) {
+  .search-container {
+    height: 32px;
+    margin-right: 32px;
+  }
+}
+.search-input {
+  height: 100%;
+  width: 100px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  outline: 1px solid #ffffff;
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .search-input {
+    width: 200px;
+    background-color: transparent;
+    outline: 1x solid #fff;
+  }
+}
+.search-button {
+  height: 100%;
+  width: 32px;
+  background-color: transparent;
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
-.icons-container {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .search-button {
+    width: 44px;
+  }
 }
-.icon-button {
+.avatar-image {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .avatar-image {
+    display: block;
+    height: 48px;
+    width: 48px;
+  }
+}
+.menu-button {
+  display: block;
   background-color: transparent;
-  border-width: 0;
-  padding-top: 5px;
-  margin-top: 4px;
-}
-
-.popup-heading {
-  font-family: 'roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 26px;
-  /* identical to box height, or 162% */
-
-  letter-spacing: -0.355556px;
-  margin-left: 35px;
-
   color: #ffffff;
+  border: none;
+  font-size: 24px;
 }
-
-.home-heading {
-  font-family: 'roboto';
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 26px;
-  letter-spacing: -0.35555556416511536px;
-  text-align: left;
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+.menu-link-container {
+  display: block;
+  list-style-type: none;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding-top: 14px;
+  padding-bottom: 26px;
+  background-color: #131313;
+  width: 100vw;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .menu-link-container {
+    display: none;
+  }
+}
+.menu-link {
   color: #ffffff;
-  margin-left: 10px;
-  align-self: flex-start;
+  font-size: 16px;
+  font-family: 'Roboto';
+  line-height: 26px;
+}
+.close-button {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  color: #ffffff;
+  font-size: 22px;
+}
+.selected {
+  font-weight: 700;
+}
+.website-logo {
+  height: 40px;
+  width: 150px;
 }
